@@ -14,8 +14,8 @@ class NumbersController < ApplicationController
   # GET /numbers/1
   # GET /numbers/1.json
   def show
-  #@primefact = generate @number
-  @primefact = generate @number.prime
+  @primefact = generate @number
+  #@primefact = generate @number.prime
   end
 
   
