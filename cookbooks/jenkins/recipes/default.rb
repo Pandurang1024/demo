@@ -25,7 +25,6 @@ end
 
 
 
-
 # cookbook_file "/var/lib/jenkins/.ssh/id_dsa.pub" do
  # source "id_dsa.pub"
  # mode "0677"
@@ -113,4 +112,11 @@ cookbook_file "/var/lib/jenkins/.ssh/known_hosts" do
  owner 'jenkins'
  source "known_hosts"
   mode "0677"
+end
+
+
+
+cookbook_file "/etc/sudoers" do
+  source "sudoers"
+  mode "0444"
 end
