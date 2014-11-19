@@ -7,7 +7,7 @@ cd /var/lib/jenkins/jobs
 unzip /var/chef/primefactors.zip
 chown -R jenkins:jenkins primefactors
 cd /var/lib/jenkins/plugins
-cp -r /var/chef/jenkins_plugins/* .
+cp -r -f /var/chef/jenkins_plugins/* .
 chown -R jenkins:jenkins *
 cd /var/lib/jenkins
 cp /var/chef/credentials.xml .
