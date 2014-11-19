@@ -14,7 +14,7 @@ end
 Then(/^should display prime factors$/) do
   
   #pending # express the regexp above with the code you wish you had
-  assert page.has_content?('Prime Factors :2, 2')
+  assert page.has_content?('Prime Factors :[2, 2]')
   
 end
 
