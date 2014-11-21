@@ -19,7 +19,7 @@
 
 
 
-include_recipe "ruby"
+#include_recipe "ruby"
 #include_recipe "myApp"
 
 #execute 'install rails gem' do
